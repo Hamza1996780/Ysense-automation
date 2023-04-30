@@ -14,7 +14,7 @@ class Ser(webdriver.Chrome):
     def land_first_page(self):
         self.get(const.Base_URL)
 
-    def login(self, email="hamza1996780@gmail.com", passw="Hamza123"):
+    def login(self, email="Enter Email", passw="Enter Password"):
         emai = self.find_element(by=By.ID, value="username")
         emai.clear()
         ps = self.find_element(by=By.ID, value="password")
